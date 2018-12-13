@@ -2,7 +2,7 @@
   "public": false,
   "manifestVersion": 1,
   "id": "web-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "DevOpsApp",
   "publisher": "GracePadilla",
   "description": "Awesome tools to help you and your team do great things everyday.",
