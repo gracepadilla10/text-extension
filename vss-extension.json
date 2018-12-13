@@ -1,11 +1,11 @@
 {
-  "public": false,
-  "manifestVersion": 1,
+  "manifestVersion": 1.0,
   "id": "web-app",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "name": "DevOpsApp",
   "publisher": "GracePadilla",
   "description": "Awesome tools to help you and your team do great things everyday.",
+  "public": false,
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
@@ -24,22 +24,38 @@
   "categories": [
     "Azure Boards"
   ],
+  "tags": [
+    "Sample"
+  ],
   "repository": {
     "type": "git",
     "uri": "https://github.com/gracepadilla10/text-extension"
   },
   "contributions": [
     {
-      "id": "wwDevOpsApp",
-      "type": "ms.vss-web-work-web.work-item-form-page",
-      "description": "Extra page that attaches a web form",
+      "id": "work-item-form-service",
+      "type": "ms.vss-web.hub",
+      "description": "Adds a 'WorkItem Service' hub to the 'Sample UI' hub group to show usage of the work item service.",
       "targets": [
-        "ms.vss-work-wen.work-item-form"
+        ".sample-ui-group"
       ],
       "properties": {
-        "name": "Web Page",
-        "uri": "web-app.html"
+        "name": "WorkItem Service",
+        "order": 110,
+        "uri": "web-app-Service.html"
       }
+    },
+    {  
+        "id": "sample-work-item-form-page",
+        "type": "ms.vss-work-web.work-item-form-page",
+        "description": "Custom work item form page",
+        "targets": [
+            "ms.vss-work-web.work-item-form"
+        ],
+      "properties": {
+        "name": "My Page",
+        "uri": "web-app.html"
+      } 
     }
   ],
   "files": [
