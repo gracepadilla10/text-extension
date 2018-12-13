@@ -1,0 +1,61 @@
+{
+  "public": false,
+  "manifestVersion": 1,
+  "id": "web-app",
+  "version": "1.0.0",
+  "name": "DevOpsApp",
+  "publisher": "GracePadilla",
+  "description": "Awesome tools to help you and your team do great things everyday.",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "demands": [
+    "api-version/3.0"
+  ],
+  "icons": {
+    "default": ""
+  },
+  "scopes": [
+    "vso.work_full",
+    "vso.code_full"
+  ],
+  "categories": [
+    "Plan and track"
+  ],
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/gracepadilla10/text-extension"
+  },
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "contributions": [
+    {
+      "id": "wwDevOpsApp",
+      "type": "ms.vss-web-work-web.work-item-form-page",
+      "description": "Extra page that attaches a web form",
+      "targets": [
+        "ms.vss-work-wen.work-item-form"
+      ],
+      "properties": {
+        "name": "Web Page",
+        "uri": ""
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "web-app.html",
+      "addressable": true
+    },
+    {
+      "path": "node_modules/vss-web-extension-sdk/lib",
+      "addressable": true,
+      "packagePath": "lib"
+    }
+  ]
+}
