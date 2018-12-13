@@ -15,7 +15,7 @@
     "api-version/3.0"
   ],
   "icons": {
-    "default": ""
+    "default": "images/Untitled.png"
   },
   "scopes": [
     "vso.work_full",
@@ -43,7 +43,7 @@
       ],
       "properties": {
         "name": "Web Page",
-        "uri": ""
+        "uri": "web-app.html"
       }
     }
   ],
